@@ -10,14 +10,6 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
 import { CartComponent } from './cart/cart.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TopBarComponent,
-    ProductListComponent,
-    ProductDetailsComponent,
-    ProductAlertsComponent,
-    CartComponent,
-  ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
@@ -31,6 +23,14 @@ import { CartComponent } from './cart/cart.component';
         component: CartComponent,
       },
     ]),
+  ],
+  declarations: [
+    AppComponent,
+    TopBarComponent,
+    ProductListComponent,
+    ProductDetailsComponent,
+    ProductAlertsComponent,
+    CartComponent,
   ],
   bootstrap: [AppComponent],
 })
